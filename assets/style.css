@@ -1,0 +1,746 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: aliceblue;
+  font-family: "Nunito", sans-serif;
+}
+
+.main {
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+/*================================================= cards====================================*/
+.cardbox {
+  margin: 50px;
+}
+
+.card {
+  font-size: 12px;
+  margin-top: 1%;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 11px 10px;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(175, 175, 184, 0.3);
+  position: relative;
+}
+
+.card h1 {
+  display: inline;
+}
+
+.newstep {
+  color: rgb(72, 75, 220);
+  margin-left: 76%;
+}
+
+.newstep h1 {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+}
+
+.newstep span {
+  display: inline;
+  position: absolute;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.title {
+  display: table;
+  width: 80%;
+  margin: 20px auto;
+  background-color: transparent;
+  padding: 1px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+.titles {
+  display: table-cell;
+  width: 10%;
+  text-align: center;
+  padding: 1px;
+}
+/*========================================table=================================================*/
+.table-box {
+  margin: 50px auto;
+}
+
+.table-row {
+  display: table;
+  width: 80%;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 12px 0;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+  border-radius: 0.5rem;
+}
+
+.table-cell {
+  display: table-cell;
+  width: 30%;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.table-no {
+  display: table-cell;
+  width: 50%;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.action_btn {
+  text-decoration: none;
+  background: #fff;
+  border: 3px solid rgb(188, 185, 185);
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 0.3rem;
+  color: rgb(9, 9, 9);
+  font-size: 14px;
+}
+
+.table-icon {
+  text-align: end;
+  width: 80%;
+}
+
+.table-icon .material-symbols-outlined {
+  width: 30%;
+  color: rgb(123, 119, 119);
+}
+
+.cardbox .card:hover {
+  border-color: rgb(72, 75, 220);
+  color: rgb(72, 75, 220);
+}
+
+.table-row .action_btn:hover {
+  border-color: rgb(72, 75, 220);
+  color: rgb(72, 75, 220);
+  transform: scale(1.02);
+}
+
+.table-row .action_btn:focus {
+  border-color: rgb(72, 75, 220);
+  color: rgb(72, 75, 220);
+}
+.table-row .material-symbols-outlined:hover {
+  color: rgb(72, 75, 220);
+  cursor: pointer;
+}
+.table-row .table-cell p:hover {
+  color: rgb(72, 75, 220);
+  cursor: pointer;
+}
+
+/*==========================================switch button===============================================*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  height: 9px;
+  width: 40px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: -5px;
+
+  background-color: rgb(72, 75, 220);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(72, 75, 220);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*=========================================================bottom===============================================*/
+
+.bottom {
+  margin-left: 72%;
+}
+
+.bottom .button1 {
+  text-decoration: none;
+  background: rgb(218, 210, 210);
+  border: 2px solid transparent;
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 0.3rem;
+  color: rgb(9, 9, 9);
+}
+
+.bottom .button2 {
+  text-decoration: none;
+  background: rgb(72, 75, 220);
+  border: 2px solid transparent;
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 0.3rem;
+  color: rgb(255, 255, 255);
+}
+
+.buttonp {
+  font-size: 14px;
+  text-decoration: none;
+  background: #fff;
+  border: 2px solid rgb(188, 185, 185);
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 0.3rem;
+  color: rgb(9, 9, 9);
+  cursor: pointer;
+}
+.buttonp:hover {
+  background: transparent;
+}
+/*======================================================popup=============================================================*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  padding: 0px;
+  margin: 70px auto;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.popup {
+  margin: 10%;
+  padding: 10px;
+  background-color: rgb(247, 243, 243);
+  font-family: "Nunito", sans-serif;
+  font-size: 19px;
+}
+.mainpop {
+  padding: 10px;
+  background-color: rgb(236, 228, 228);
+  border: 1px solid rgb(211, 210, 210);
+}
+
+.header h1 {
+  font-size: 13px;
+  display: inline-flex;
+}
+
+.header button {
+  margin-left: 80%;
+  cursor: pointer;
+}
+.header a {
+  margin-top: -15px;
+  margin-right: -19px;
+}
+
+.actionbtn {
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid transparent;
+  display: inline;
+  padding: 1px 1px;
+  border-radius: 0.3rem;
+  color: rgb(137, 136, 136);
+}
+.one {
+  display: flex;
+}
+.one p {
+  margin-right: 138px;
+}
+
+.one .material-symbols-outlined {
+  display: inline-flex;
+  font-size: 23px;
+  height: 100%;
+  align-items: center;
+  color: rgb(134, 134, 134);
+}
+.two {
+  display: flex;
+}
+
+.two form {
+  padding-right: 10px;
+}
+
+.two input {
+  padding: 10px 39px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: transparent;
+}
+
+.three {
+  font-size: 13px;
+}
+
+.three span {
+  font-size: 13px;
+}
+
+.four p {
+  padding: 0px;
+  font-weight: 600;
+}
+
+.radio div {
+  display: inline-flex;
+  padding-bottom: 10px;
+  margin-right: 10%;
+}
+
+.radio input {
+  cursor: pointer;
+}
+
+.five {
+  padding: 10px;
+}
+
+.button {
+  display: inline-flex;
+  height: 40px;
+  padding: 0;
+  background-color: #4f31bc;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button .material-symbols-outlined,
+.button_text {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fff;
+  height: 100%;
+}
+
+.button .material-symbols-outlined {
+  font-size: 1.5em;
+  background-color: #3609be;
+}
+.six {
+  display: flex;
+}
+.six p {
+  margin-right: 106px;
+}
+.six span {
+  cursor: pointer;
+}
+
+.six .material-symbols-outlined {
+  display: inline-flex;
+  font-size: 23px;
+  height: 100%;
+  align-items: center;
+  color: rgb(134, 134, 134);
+}
+
+.color {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.color form {
+  padding-right: 50px;
+}
+.color label {
+  color: rgb(0, 0, 0);
+}
+
+#colorPicker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: -30px;
+}
+#colorPicker::-webkit-color-swatch {
+  border-radius: 5px;
+  border: none;
+}
+#colorPicker::-moz-color-swatch {
+  border-radius: 10px;
+  border: none;
+}
+#colorPick {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: -30px;
+}
+
+#colorPick::-webkit-color-swatch {
+  border-radius: 5px;
+  border: none;
+}
+
+#colorPick::-moz-color-swatch {
+  border-radius: 10px;
+  border: none;
+}
+.color-picker {
+  padding: 15px 70px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.seven .material-symbols-outlined {
+  display: inline-flex;
+  font-size: 16px;
+  height: 100%;
+  align-items: center;
+  color: rgb(134, 134, 134);
+}
+
+.seven textarea {
+  border-radius: 5px;
+  width: 90%;
+  border-color: #ccc;
+  background-color: transparent;
+}
+
+.eight .filter {
+  padding: 2px;
+}
+
+.eight select {
+  border-radius: 5px;
+  padding: 11px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.eight option {
+  margin-top: 10px;
+}
+.nine {
+  padding: 10px;
+  text-align: end;
+}
+
+.nine .button1 {
+  padding: 9px;
+  width: 20%;
+  background-color: #ccc;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nine .button2 {
+  padding: 9px;
+  width: 30%;
+  background-color: rgb(50, 7, 136);
+  border-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+/*=========================================================switch button in popup================================================*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  height: 9px;
+  width: 40px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: -5px;
+
+  background-color: rgb(72, 75, 220);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(72, 75, 220);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*=============================================resposive design===================================================*/
+@media only screen and (min-width: 400px) {
+  .table-row {
+    padding: 1px;
+  }
+  .bottom {
+    display: flex;
+    margin-left: 29%;
+  }
+  .bottom .button2 {
+    margin-left: 8px;
+  }
+}
+.popup {
+  font-size: 10px;
+  width: 95%;
+  margin-top: 90px;
+  margin-left: 10px;
+}
+.popup .mainpop {
+  height: 500px;
+  padding: 10px;
+}
+.one {
+  height: 25px;
+}
+.two input {
+  width: 130px;
+  height: 20px;
+}
+.three {
+  font-size: 10px;
+  height: 3px;
+}
+.four {
+  padding: -5px;
+}
+.five {
+  height: 40px;
+}
+.five button {
+  height: 30px;
+}
+.six {
+  height: -2px;
+}
+.color {
+  height: 30px;
+}
+.color-picker {
+  border: none;
+}
+.seven textarea {
+  height: 60px;
+}
+.eight select {
+  font-size: 10px;
+  height: 30px;
+  padding: 1px;
+}
+.eight p {
+  height: 5px;
+}
+.nine button {
+  height: 30px;
+  padding: 1px;
+  font-size: 10px;
+  margin-top: -5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .one p {
+    margin-top: 1px;
+    margin-right: 175px;
+  }
+  .six p {
+    margin-right: 60px;
+  }
+  .card {
+    text-align: center;
+    padding: 9px 10px;
+  }
+
+  .table-box {
+    margin-top: -5%;
+  }
+  .table-row {
+    padding: 1px;
+  }
+
+  .popup {
+    width: 80%;
+  }
+
+  .bottom {
+    display: inline-flex;
+    margin-left: 58%;
+    margin-top: 10px;
+  }
+  .bottom .button2 {
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .card {
+    text-align: center;
+    display: inline;
+    padding: 20px 8px;
+    margin-left: 15px;
+  }
+  .card h1 {
+    font-size: 22px;
+  }
+  .table-box {
+    margin-top: 10px;
+  }
+  .popup {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 30%;
+    font-size: 10px;
+  }
+  .color {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.color form {
+  padding-right: 50px;
+}
+.color label {
+  color: rgb(0, 0, 0);
+}
+  .bottom {
+    margin-left: 71.5%;
+  }
+}
